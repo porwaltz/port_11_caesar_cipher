@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Waltz apps 3: encrypter</h1>
+    </header>
+    <section>
+        <div>
+            <textarea name="" id="entry-text" cols="50" rows="10" placeholder="put your text here"></textarea>
+            <br>
+            <textarea name="" id="encrypt-value" cols="5" rows="1" placeholder="value"></textarea>
+            <textarea name="" id="magic-value" cols="22" rows="3" placeholder="your magic word"></textarea>
+            <br>
+            <textarea name="" id="exit-text" cols="50" rows="10" placeholder="result"></textarea>
+        </div>
+        <select name="select" onClick="{format()}" id="selector">
+            <option value="caesars" selected>caesars</option>
+            <option value="numeric" >numeric</option>
+            <option value="magic-word">magic word</option>
+        </select>
+        <button onclick="{encrypt()}">encrypt</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

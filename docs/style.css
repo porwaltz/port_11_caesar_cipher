@@ -1,0 +1,7 @@
+#magic-value{
+    display: none;
+}
+
+#encrypt-value, #exit-text{
+    display: block;
+}
